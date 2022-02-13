@@ -1,7 +1,8 @@
 // business logic //
-const input='';
+const input= ('input:text[name=numbers]')
 const arrayNumbers=[];
 
-function inputted(input) {
-const 
+function inputtedNumbers(input) {
+const number = parseInt(input);
+return alert(number);
 }
