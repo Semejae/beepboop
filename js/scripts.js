@@ -1,8 +1,19 @@
 // business logic //
-const input= ('input:text[name=numbers]')
-const arrayNumbers=[];
+$(document).ready(function() {
+  $('form#input').submit(function(event) {
 
-function inputtedNumbers(input) {
-const number = parseInt(input);
-return alert(number);
-}
+    const input = $('input:text[name=numbers]').val();
+    const numbers = parseInt(input);
+    const arrayNumbers = []
+  
+    function outputNumber = numbers {
+      
+
+    }
+    
+    
+
+  event.preventDefault();
+
+  });
+});
