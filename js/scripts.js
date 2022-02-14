@@ -5,26 +5,30 @@ $(document).ready(function() {
 
   const input = $('#numbers').val(); 
   const number = parseInt(input)
-  const array = ['beep', 'boop', 'wont you be my neighbor?'];
+  const arrayNumber = []
   
   
-  // console.log(number)
-
-    for (let i = 0; i <= 'beep', 'boop', 'wont you be my neighbor?'; i++) { 
-    
-    if (number === 1 ) {
-    return array['0']
-  
-    } else if (number === 2 ) {
-    return array['1']
-
-    } else (number === 3 ); {
-    return array['2']
+  // console.log(array.length)
+    for (let i = 1; i <= number; i++) { 
+    arrayNumber.push(i)
+    // console.log(arrayNumber)
     }
+    
+    if (number === 3 ) {
+    arrayNumber.push('beep')
+
+  console.log(arrayNumber)
+  //   } else if (number === 2 ) {
+  // return "boop"
+
+  //   } else (number === 3 ); {
+  // return 'Wont you be my neighbor?'
+  //   }
+  
+  
   
   }
-    
-
+  
 
   });
 });
