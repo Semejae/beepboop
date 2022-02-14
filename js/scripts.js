@@ -10,14 +10,15 @@ $(document).ready(function() {
   
   // console.log(array.length)
     for (let i = 1; i <= number; i++) { 
-      console.log(arrayNumber.replace('beep'))
-    // console.log(arrayNumber)
     
     
-    // if (number === 3 ) {
-    // arrayNumber.push('beep')
+    
+    if (i === 3 ) {
+    arrayNumber.push('beep')
+    }
 
-  // console.log(arrayNumber)
+    arrayNumber.push(i)
+  console.log(arrayNumber)
   //   } else if (number === 2 ) {
   // return "boop"
 
