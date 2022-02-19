@@ -8,4 +8,9 @@ input {
 }
 .btn {
   display: block;
+  color: azure;
+}
+body {
+  background-color: black;
+  color: azure ;
 }
