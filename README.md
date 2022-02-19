@@ -6,6 +6,27 @@ Expected Output: 'beep','boop'
 test: beepboop(3)
 Expected Output: 'bee','boop','wont you be my neighbor?'
 
+Describe: inputNum
+test: "take a string and make it a number"
+code: 
+const input = $('#numbers').val();
+const inputNum = parseInt(input);
+Expected Output: 1
+
+Describe: roboBeep(input)
+test:'it should take 1,2,3 and place it with beep, boop, wont you be my neighbor'
+Code: 
+for (let i = 0; i <= inputNum; i++) {let numberImLookingAt = i.toString();
+if (numberImLookingAt.includes('3')) {arrayNumber.push('Wont you be my neighbor?')} else if (numberImLookingAt.includes('2')) {arrayNumber.push('boop')} else if (numberImLookingAt.includes('1')) {arrayNumber.push('beep')} else {arrayNumber.push(i)}} return arrayNumber
+Expected Output: 'beep'
+
+Describe: outputArray
+test: 'displays roboBeep'
+code: 
+const outputArray = roboBeep(inputNum);
+$('#results').text(outputArray)
+Expected Output: 'bee','boop','wont you be my neighbor?'
+
 ## BeepBoop
 
 ### by_**{Anthony-Gladden}**_
